@@ -8,3 +8,10 @@ div.dark-mode {
     background-color: black;
     color: white;
 }
+
+@media (max-width: 600px) {
+    div.dark-mode {
+        background-color: #1a1a1a;
+        color: #e0e0e0;
+    }
+}
