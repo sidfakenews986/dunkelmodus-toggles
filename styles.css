@@ -12,6 +12,6 @@ div.dark-mode {
 @media (max-width: 600px) {
     div.dark-mode {
         background-color: #161616; /* Increased contrast */
-        color: #e0e0e0; /* Enhanced readability */
+        color: #d0d0d0; /* Further enhance readability */
     }
 }
