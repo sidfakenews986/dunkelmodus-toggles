@@ -1,7 +1,7 @@
 class DunkelmodusToggles {
     constructor() {
         this.toggleButton = document.getElementById('toggle-button');
-        this.darkModeEnabled = localStorage.getItem('darkMode') === 'true';
+        this.isDarkModeEnabled = localStorage.getItem('darkMode') === 'true';
         this.init();
     }
 
@@ -13,13 +13,13 @@ class DunkelmodusToggles {
     }
 
     toggleMode() {
-        this.darkModeEnabled = !this.darkModeEnabled;
-        localStorage.setItem('darkMode', this.darkModeEnabled);
+        this.isDarkModeEnabled = !this.isDarkModeEnabled;
+        localStorage.setItem('darkMode', this.isDarkModeEnabled);
         this.applyMode();
     }
 
     applyMode() {
-        if (this.darkModeEnabled) {
+        if (this.isDarkModeEnabled) {
             document.body.classList.add('dark-mode');
         } else {
             document.body.classList.remove('dark-mode');
