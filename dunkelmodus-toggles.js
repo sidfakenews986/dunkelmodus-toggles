@@ -1,4 +1,4 @@
-class DunkelmodusToggles {
+class DunkelModusToggles {
     constructor() {
         this.toggleButton = document.getElementById('toggle-button');
         this.isDarkModeEnabled = localStorage.getItem('darkMode') === 'true';
@@ -27,4 +27,4 @@ class DunkelmodusToggles {
     }
 }
 
-const dunkelmodusToggles = new DunkelmodusToggles();
+const dunkelmodusToggles = new DunkelModusToggles();
