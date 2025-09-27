@@ -1,0 +1,10 @@
+body {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+div.dark-mode {
+    background-color: black;
+    color: white;
+}
