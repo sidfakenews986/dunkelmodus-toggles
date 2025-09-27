@@ -7,7 +7,9 @@ class DunkelmodusToggles {
 
     init() {
         this.applyMode();
-        this.toggleButton.addEventListener('click', () => this.toggleMode());
+        if (this.toggleButton) {
+            this.toggleButton.addEventListener('click', () => this.toggleMode());
+        }
     }
 
     toggleMode() {
